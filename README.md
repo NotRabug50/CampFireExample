@@ -9,5 +9,5 @@
 ### Smoke Texture And Fire Gradient: https://www.youtube.com/watch?v=4VDNBTF9mu0
 
 ## Controls
-### [] Right Click to Use Control Cameras Rotation
-### [] WASD for Movement
+- [] Right Click to Use Control Cameras Rotation
+- [] WASD for Movement
