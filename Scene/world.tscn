@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://u2u5ymcm5hqg"]
+
+[ext_resource type="PackedScene" uid="uid://t6cfcwxsb3fn" path="res://Scene/enviroment.tscn" id="1_6wdo3"]
+[ext_resource type="Script" path="res://free_look_camera.gd" id="2_1osiy"]
+
+[node name="World" type="Node3D"]
+
+[node name="Enviroment" parent="." instance=ExtResource("1_6wdo3")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.80765, 0, -0.589662, 0, 1, 0, 0.589662, 0, 0.80765, -11.1859, 0.629829, 33.078)
+current = true
+fov = 60.3834
+script = ExtResource("2_1osiy")

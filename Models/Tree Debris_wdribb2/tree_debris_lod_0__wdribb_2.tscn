@@ -1,0 +1,17 @@
+[gd_scene load_steps=6 format=3 uid="uid://2q7jk5os101c"]
+
+[ext_resource type="PackedScene" uid="uid://bmb2wcu8alpv7" path="res://Models/Tree Debris_wdribb2/Tree Debris_LOD0__wdribb2.fbx" id="1_aj3wd"]
+[ext_resource type="Texture2D" uid="uid://q6caf67k022p" path="res://Models/Tree Debris_wdribb2/Albedo_2K__wdribb2.jpg" id="2_pudla"]
+[ext_resource type="Texture2D" uid="uid://brcl5sm60tb7l" path="res://Models/Tree Debris_wdribb2/Normal_2K_LOD0_wdribb2.jpg" id="3_vonmm"]
+[ext_resource type="Texture2D" uid="uid://d1f2rxglyiub3" path="res://Models/Tree Debris_wdribb2/Roughness_2K__wdribb2.jpg" id="4_0im8v"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dtclb"]
+albedo_texture = ExtResource("2_pudla")
+roughness_texture = ExtResource("4_0im8v")
+normal_enabled = true
+normal_texture = ExtResource("3_vonmm")
+
+[node name="Tree Debris_LOD0__wdribb2" instance=ExtResource("1_aj3wd")]
+
+[node name="Aset_nature_tree_S_wdribb2_00_LOD0" parent="RootNode/world_root" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_dtclb")

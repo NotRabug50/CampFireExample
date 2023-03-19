@@ -1,0 +1,17 @@
+[gd_scene load_steps=6 format=3 uid="uid://civb3hs8hm3q7"]
+
+[ext_resource type="PackedScene" uid="uid://lghoirxixy08" path="res://Models/Old Wooden Log_wcolfdz/Old Wooden Log_LOD0__wcolfdz.fbx" id="1_qskw0"]
+[ext_resource type="Texture2D" uid="uid://c4k2ib8psopgl" path="res://Models/Old Wooden Log_wcolfdz/Albedo_2K__wcolfdz.jpg" id="2_636hj"]
+[ext_resource type="Texture2D" uid="uid://bgywv6nomttd" path="res://Models/Old Wooden Log_wcolfdz/Normal_2K_LOD0_wcolfdz.jpg" id="3_57qvl"]
+[ext_resource type="Texture2D" uid="uid://dec31niyd36id" path="res://Models/Old Wooden Log_wcolfdz/Roughness_2K__wcolfdz.jpg" id="4_ms4hu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r1tj4"]
+albedo_texture = ExtResource("2_636hj")
+roughness_texture = ExtResource("4_ms4hu")
+normal_enabled = true
+normal_texture = ExtResource("3_57qvl")
+
+[node name="Old Wooden Log_LOD0__wcolfdz" instance=ExtResource("1_qskw0")]
+
+[node name="Aset_nature_tree_L_wcolfdz_00_LOD0" parent="RootNode/world_root" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_r1tj4")

@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3 uid="uid://ce7sc0juvltu4"]
+
+[ext_resource type="PackedScene" uid="uid://b6kfj48781avm" path="res://Models/Old Wooden Door_wbmgdcpdw/Old Wooden Door_LOD0__wbmgdcpdw.fbx" id="1_6r7we"]
+[ext_resource type="Texture2D" uid="uid://7b7d5spk7x8n" path="res://Models/Old Wooden Door_wbmgdcpdw/Albedo_2K__wbmgdcpdw.jpg" id="2_0aeg1"]
+[ext_resource type="Texture2D" uid="uid://drvyxwvpkjmth" path="res://Models/Old Wooden Door_wbmgdcpdw/Normal_2K_LOD0_wbmgdcpdw.jpg" id="3_xreik"]
+[ext_resource type="Texture2D" uid="uid://dalqp78isxwtv" path="res://Models/Old Wooden Door_wbmgdcpdw/Roughness_2K__wbmgdcpdw.jpg" id="4_52fi6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oyq8e"]
+albedo_texture = ExtResource("2_0aeg1")
+roughness_texture = ExtResource("4_52fi6")
+normal_enabled = true
+normal_texture = ExtResource("3_xreik")
+texture_filter = 5
+
+[node name="Old Wooden Door_LOD0__wbmgdcpdw" instance=ExtResource("1_6r7we")]
+
+[node name="Aset_interior_door_M_wbmgdcpdw_LOD0" parent="RootNode" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_oyq8e")
